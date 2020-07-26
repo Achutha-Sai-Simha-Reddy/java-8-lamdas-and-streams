@@ -1,4 +1,4 @@
-package com.epam.Lambdas_Streams; 
+package com.epam.java8; 
 import java.util.function.Predicate; 
 import java.io.*; 
 import java.util.*;
@@ -21,17 +21,17 @@ public class Main
 	public static void main(String args[]) 
 	{ 
 		String strArray[]={"madam","malayalam","ant","apple","mom","radar","rotator","aaa","arc"};
-    List<Integer> list1=new ArrayList<>();
+                 List<Integer> list1=new ArrayList<>();
 		List<String> list = Arrays.asList(strArray); 
-    list1.add(12);
+                list1.add(12);
 		list1.add(22);
 		list1.add(33);
 		list1.add(41);
-	  list1.add(51);
+	        list1.add(51);
 	    
 	        average(list1);
-          System.out.print("string which strats with 'a' and have length as 3 are:")
-		      System.out.println(lowercase_a(list,(String str) -> str.startsWith("a") && str.length()==3 ));
+                System.out.print("string which strats with 'a' and have length as 3 are:")
+	        System.out.println(lowercase_a(list,(String str) -> str.startsWith("a") && str.length()==3 ));
           System.out.print("Palindrome in the given String list are:")
           System.out.println(lower(list ,Palindrome::ispal));
 	}
